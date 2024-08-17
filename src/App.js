@@ -1,22 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import { CardFull } from './Card';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <CardFull header = 'Basic' price = {50} desc = 'Прямой номер' no = {1}/>
+        
+        <CardFull header = 'Standart' price = {100} desc = 'Квадратный номер' no = {2}/>
+        
+        <CardFull header = 'Premium' price = {150} desc = 'Круглый номер' no = {3}/>
       </header>
     </div>
   );
